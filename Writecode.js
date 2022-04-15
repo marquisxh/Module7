@@ -18,15 +18,18 @@ console.log(value)
 // Unique Characters
 
 word = ["Car", "House", "Phone", "School", "Job"]
-let unique = "";
+let unique = [];
 
 function hasUniqueChars(word) {
     for (let i = 0; i < word.length; i++) {
-        if (unique.includes(word[i] === false)) {
-            return uniq += str[i]
-        }
+        if (unique[word[i]]) {
+            return false
+        } else {
+            unique[word[i]] = 1
+             console.log(unique)
+}
     }
-    return unique;
+        return true
 }
 
 console.log(hasUniqueChars('Cars'))
